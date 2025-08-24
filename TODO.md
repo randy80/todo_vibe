@@ -19,25 +19,26 @@
 
 ## Phase 1: 프로젝트 초기 설정
 
-### ⏸️ 1. 모노리포 구조 및 루트 설정
+### ✅ 1. 모노리포 구조 및 루트 설정
 **🔗 의존성**: 없음 (시작점)  
 **📁 생성할 파일**: `package.json`, `.gitignore`, `.env.example`, `README.md`
 
 **세부 작업**:
-- [ ] 루트 `package.json` 생성 (workspaces 설정)
+- [x] 루트 `package.json` 생성 (workspaces 설정)
   ```bash
   npm init -y
   # workspaces: ["frontend", "backend"]
   ```
-- [ ] 디렉토리 구조 생성
+- [x] 디렉토리 구조 생성
   ```bash
   mkdir -p frontend backend shared docs scripts docker
   ```
-- [ ] 루트 레벨 설정 파일들 생성
-  - [ ] `.gitignore` (Node.js, Java, IDE 설정)
-  - [ ] `.env.example` (환경변수 템플릿)
-  - [ ] `README.md` (프로젝트 개요)
-- [ ] 개발 스크립트 설정 (`package.json`의 scripts 섹션)
+- [x] 루트 레벨 설정 파일들 생성
+  - [x] `.gitignore` (Node.js, Java, IDE 설정)
+  - [x] `.env.example` (환경변수 템플릿)
+  - [x] `README.md` (프로젝트 개요)
+- [x] 개발 스크립트 설정 (`package.json`의 scripts 섹션)
+- [x] concurrently 의존성 설치
 
 **✅ 완료 조건**: 디렉토리 구조 생성 완료 및 루트 package.json에서 `npm run dev` 명령어 동작
 
