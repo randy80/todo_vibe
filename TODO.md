@@ -42,26 +42,26 @@
 
 **✅ 완료 조건**: 디렉토리 구조 생성 완료 및 루트 package.json에서 `npm run dev` 명령어 동작
 
-### ⏸️ 2. Vue.js 3 프론트엔드 프로젝트 초기화
+### ✅ 2. Vue.js 3 프론트엔드 프로젝트 초기화
 **🔗 의존성**: 1번 완료 후  
 **📁 생성할 파일**: `frontend/package.json`, `frontend/vite.config.ts`, `frontend/tsconfig.json`
 
 **세부 작업**:
-- [ ] Vite + Vue 3 + TypeScript 프로젝트 생성
+- [x] Vite + Vue 3 + TypeScript 프로젝트 생성
   ```bash
   cd frontend
   npm create vue@latest . --typescript --router --pinia
   ```
-- [ ] 추가 의존성 설치
+- [x] 추가 의존성 설치
   ```bash
   npm install axios @types/axios
   npm install vuetify@next @mdi/js
   ```
-- [ ] 폴더 구조 생성
+- [x] 폴더 구조 생성
   ```bash
   mkdir -p src/{components/common,components/todo,views,stores,services,types,utils}
   ```
-- [ ] Vite 설정 파일 구성 (프록시 설정, 환경 변수)
+- [x] Vite 설정 파일 구성 (프록시 설정, 환경 변수)
 
 **✅ 완료 조건**: `npm run dev` 실행 시 Vue 앱이 localhost:5173에서 정상 동작
 
