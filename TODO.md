@@ -65,11 +65,11 @@
 
 **✅ 완료 조건**: `npm run dev` 실행 시 Vue 앱이 localhost:5173에서 정상 동작
 
-### ⏸️ 3. Spring Boot 백엔드 프로젝트 초기화
-- [ ] Spring Boot 3.x 프로젝트 생성
-- [ ] 필수 의존성 추가 (Spring Web, JPA, Security, PostgreSQL)
-- [ ] 기본 패키지 구조 생성
-- [ ] `application.yml` 기본 설정
+### ✅ 3. Spring Boot 백엔드 프로젝트 초기화
+- [x] Spring Boot 3.x 프로젝트 생성
+- [x] 필수 의존성 추가 (Spring Web, JPA, Security, PostgreSQL)
+- [x] 기본 패키지 구조 생성
+- [x] `application.yml` 기본 설정
 
 ### ⏸️ 4. PostgreSQL 데이터베이스 및 스키마 설정
 - [ ] Docker Compose로 PostgreSQL 컨테이너 설정

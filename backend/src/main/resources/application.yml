@@ -1,0 +1,47 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: todo-backend
+  
+  datasource:
+    url: jdbc:postgresql://localhost:5432/todo_db
+    username: ${DB_USERNAME:todo_user}
+    password: ${DB_PASSWORD:todo_password}
+    driver-class-name: org.postgresql.Driver
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: ${SHOW_SQL:false}
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+  
+  security:
+    user:
+      name: admin
+      password: admin
+
+# JWT Configuration
+jwt:
+  secret: ${JWT_SECRET:mySecretKey12345678901234567890123456789012345678901234567890}
+  expiration: 86400000 # 24 hours in milliseconds
+
+# Logging Configuration
+logging:
+  level:
+    com.todo: ${LOG_LEVEL:INFO}
+    org.springframework.security: ${SECURITY_LOG_LEVEL:WARN}
+    org.hibernate.SQL: ${SQL_LOG_LEVEL:WARN}
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when-authorized

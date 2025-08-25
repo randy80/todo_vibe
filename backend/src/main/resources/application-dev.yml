@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/todo_db_dev
+    username: todo_user
+    password: todo_password
+  
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+
+logging:
+  level:
+    com.todo: DEBUG
+    org.springframework.security: DEBUG
+    org.hibernate.SQL: DEBUG
